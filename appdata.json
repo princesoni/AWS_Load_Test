@@ -1,0 +1,9 @@
+{
+    "appdata": {
+        "host_name": "minnow-api.cloud.appcelerator.com",
+        "app_key": "vqXX8Kulo6wnI7528RgNHTHQEEVmq4lc",
+        "port": 443,
+        "content_type": "application/json",
+        "controlPort": 8889
+    }
+}
