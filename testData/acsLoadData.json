@@ -1,0 +1,83 @@
+{
+    "data": {
+        "createUser": {
+            "fields": {
+                "email": "princesoniprince007@gmail.com",
+                "role": "teacher",
+                "first_name": "demo-s",
+                "last_name": "demo-s",
+                "password": "manaksoni",
+                "password_confirmation": "manaksoni"
+            },
+            "method_type": "POST",
+            "method_url": "/v1/users/create.json"
+        },
+        "createPost": {
+            "fields": {
+                "content": "new post created",
+                "title": "test post!!!"
+            },
+            "method_type": "POST",
+            "method_url": "/v1/posts/create.json"
+        },
+        "createCustomObject": {
+            "fields": {
+                "custom_value": {
+                    "name": "prince",
+                    "make": "customObj",
+                    "color": "red",
+                    "year": 2025
+                }
+            },
+            "classname": "car",
+            "method_type": "POST",
+            "method_url": "/v1/objects/car/create.json"
+        },
+        "queryCustomData": {
+            "fields": {
+                "page": 1,
+                "per_page": 30,
+                "clause": {
+                    "where": {
+                        "color": "red",
+                        "year": 2025
+                    }
+                },
+                "order": "created_at"
+
+            },
+            "classname": "car",
+            "method_type": "GET",
+            "method_url": "/v1/objects/car/query.json"
+        },
+        "queryPost": {
+            "fields": {
+                "page": 1,
+                "per_page": 30,
+                "clause": {
+                    "where": { }
+                }
+            },
+            "method_type": "GET",
+            "method_url": "/v1/posts/query.json"
+        },
+        "createPlacesObject": {
+            "fields": {
+                "name": "prince",
+                "state": "mp",
+                "address": "sector 52",
+                "website": "www.globallogic.com"
+            } ,
+            "method_type": "POST",
+            "method_url": "/v1/places/create.json"
+        },
+        "logoutUser": {
+            "fields": {
+                "errortext": "Failed to logout User",
+                "successtext": "User logout successfully"
+            },
+            "method_type": "GET",
+            "method_url": "/v1/users/logout.json"
+        }
+    }
+}
